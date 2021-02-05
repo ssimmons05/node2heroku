@@ -1,6 +1,7 @@
 # Cheat Sheet: Deploying Node Apps on Heroku
 
 
+### Initialize and Deploy
 
 1. In terminal, type `brew install heroku/brew/heroku`
 
@@ -28,19 +29,19 @@
 
 10. If you don't already have a .gitignore file, create one in the root of your project and add files/folders such as `node_modules/`
 
-11. `git add .``
+11. `git add .`
 
-12. ``git commit -m "Add your comments here"`
+12. `git commit -m "Add your comments here"`
 
-13. git show-ref` to see if your branch is named `main` or `master
+13. `git show-ref` to see if your branch is named `main` or `master
 
-14. ``git push heroku main` or `git push heroku master`
+14. `git push heroku main` or `git push heroku master`
 
-15. heroku ps:scale web=1
+15. `heroku ps:scale web=1`
 
-16. ``heroku open`
+16. `heroku open`
 
-17. heroku logs --tail` to check logs if there's a problem
+17. `heroku logs --tail` to check logs if there's a problem
 
 18. `heroku local web`
 
