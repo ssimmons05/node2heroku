@@ -11,7 +11,7 @@
 
 4. `require('dotenv').config()` at the beginning of your Node js code (server.js)
 
-5. `node --v` and add the version number to package.json 
+5. `node -v` and add the version number to package.json 
 
    ```json
      "engines": {
@@ -36,6 +36,8 @@
 13. `git show-ref` to see if your branch is named `main` or `master
 
 14. `git push heroku main` or `git push heroku master`
+
+14.5  If you enounter an error, run `heroku create` again
 
 15. `heroku ps:scale web=1`
 
@@ -63,6 +65,3 @@
 3. `KEY=value` in .env file
 4. `const key = process.env.KEY` in your Node js code
 5. If you're Node project contains a web server, you need to specify that it uses the right port number.  Heroku will set an environmental var named `PORT` that you can use, as in `port = process.env.PORT || 3000`
-
-
-
